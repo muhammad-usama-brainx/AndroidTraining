@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 
 
 class FirstFragment : Fragment() {
@@ -25,6 +24,12 @@ class FirstFragment : Fragment() {
 
         val viewModel: MainActivityViewModel by activityViewModels();
         val textView: TextView = view.findViewById(R.id.textView);
+
+        val data = arguments;
+
+       data?.let {
+           println(it.getString("name"))
+       }
 
         textView.text = viewModel.number.toString();
     }

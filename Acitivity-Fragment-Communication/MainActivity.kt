@@ -7,7 +7,7 @@ import androidx.activity.viewModels
 import androidx.fragment.app.Fragment
 
 class MainActivity :  AppCompatActivity(){
-    val viewModel: MainActivityViewModel by viewModels();
+   private val viewModel: MainActivityViewModel by viewModels();
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +21,10 @@ class MainActivity :  AppCompatActivity(){
         val firstFragment = FirstFragment();
         val secondFragment = SecondFragment();
         replaceFragment(firstFragment, "first");
+
+        firstFragment.arguments = Bundle().apply {
+            this.putString("name", "Usama Javed");
+        };
 
         btnAdd.setOnClickListener {
             viewModel.increaseNumber();
