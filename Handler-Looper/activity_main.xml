@@ -11,14 +11,14 @@
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
-    <ProgressBar
-        android:id="@+id/progressBar"
+    <TextView
+        android:id="@+id/tvCount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_margin="16dp"
-        android:visibility="invisible"
-        tools:visibility="visible"/>
+        android:text="0"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
 
     <Button
         android:id="@+id/btnStart"
@@ -27,6 +27,12 @@
         android:text="Start"
         tools:ignore="HardcodedText" />
 
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        tools:ignore="HardcodedText" />
 
 </LinearLayout>
 
