@@ -14,20 +14,12 @@
     tools:ignore="HardcodedText">
 
     <Button
-        android:id="@+id/btnStart"
+        android:id="@+id/btnSecondActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Service"
+        android:text="Go to second activity"
         tools:layout_editor_absoluteX="146dp"
         tools:layout_editor_absoluteY="180dp" />
-
-    <Button
-        android:id="@+id/btnStop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Stop Service"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="289dp" />
 
 
 </LinearLayout>

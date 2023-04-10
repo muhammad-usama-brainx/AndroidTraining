@@ -15,9 +15,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnStart.setOnClickListener {
-            println("Going to start service")
-            startService(Intent(this, CountService::class.java))
+        binding.btnSecondActivity.setOnClickListener {
+            Intent(this, SecondActivity::class.java).also {
+                startActivity(it);
+            }
         }
+
+
     }
 }
