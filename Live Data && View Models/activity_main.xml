@@ -13,13 +13,18 @@
     tools:layout_editor_absoluteY="81dp"
     tools:ignore="HardcodedText">
 
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="0" />
+
     <Button
-        android:id="@+id/btnSecondActivity"
+        android:id="@+id/btnAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Go to second activity"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="180dp" />
+        android:text="Add" />
 
 
 </LinearLayout>
